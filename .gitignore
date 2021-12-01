@@ -1,0 +1,6 @@
+# PyCharm
+/.idea
+# виртуалка
+/venv
+# python-мусор
+__pycache__/
