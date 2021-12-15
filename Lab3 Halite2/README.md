@@ -2,12 +2,12 @@
 
 ## Задание
 1. Загрузить среду для языка Python3 и своей операционной системы:
-https://2017.halite.io/learn-programming-challenge/downloads-and-starterkits.
+https://2017.halite.io/learn-programming-challenge/downloads-and-starter-kits.
 2. В среде Python (3.7 – 3.8) создать проект и подключить библиотеку hlt.
 3. Прочитать, перевести, включить в отчёт описание игры Halite 2:
 https://2017.halite.io/learn-programming-challenge/basic-game-rules
 4. Прочитать, перевести, включить в отчёт и повторить эксперимент из статьи «ML Starter Bot»
-https://2017.halite.io/learn-programmingchallenge/downloads-and-starter-kits/ml-starter-bot.
+https://2017.halite.io/learn-programming-challenge/downloads-and-starter-kits/ml-starter-bot.
 Продемонстрировать один из эпизодов динамики игры видеофайлом.
 5. Создать команду из не более чем 3 студентов, дать ей название, придумать оригинальную стратегию игры, разработать и
 обучить бота используя технологии Deep Reinforcement Learning и библиотеку глубокого обучения Keras.
