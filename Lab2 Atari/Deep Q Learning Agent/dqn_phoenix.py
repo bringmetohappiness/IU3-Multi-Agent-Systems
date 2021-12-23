@@ -147,7 +147,7 @@ if __name__ == '__main__':
             ts = time.time()
             mean_reward = np.mean(total_rewards[-100:])
             print(
-                f'{frame_idx}: done {len(total_rewards)} games, mean reward {mean_reward:.3f},'
+                f'{frame_idx}: done {len(total_rewards)} games, mean reward {mean_reward:.3f}, '
                 f'eps {epsilon:.2f}, speed {speed:.2f} f/s')
             writer.add_scalar('EPSILON', epsilon, frame_idx)
             writer.add_scalar('speed', speed, frame_idx)
