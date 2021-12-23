@@ -33,7 +33,7 @@ class FrozenLakeAgent:
             max_steps: максимальное количество шагов агента в эпизоде.
             show: показывать ли тестирование.
 
-        Returns
+        Returns:
             win_rate: винрейт агента.
         """
         raise NotImplementedError()
@@ -102,12 +102,13 @@ class QTableAgent(FrozenLakeAgent):
     def _update_q_table(self, s, a, r, new_s, lr_rate, y):
         """Обновляет Q-таблицу агента.
 
-        s: state, состояние.
-        a: action, действие.
-        r: reward, награда.
-        new_s: new state, новое состояние.
-        lr_rate: скорость обучения.
-        y: gamma или discount factor, фактор дисконтирования.
+        Args:
+            s: state, состояние.
+            a: action, действие.
+            r: reward, награда.
+            new_s: new state, новое состояние.
+            lr_rate: скорость обучения.
+            y: gamma или discount factor, фактор дисконтирования.
         """
         self.Q[s, a] = self.Q[s, a] + lr_rate * (r + y * np.max(self.Q[new_s, :]) - self.Q[s, a])
 

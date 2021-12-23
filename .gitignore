@@ -4,6 +4,7 @@
 /venv
 # Bytecode
 __pycache__/
+*.py[cod]
 
 /Lab3 Halite2/HALITE2 README.md
 /Lab3 Halite2/halite.exe
