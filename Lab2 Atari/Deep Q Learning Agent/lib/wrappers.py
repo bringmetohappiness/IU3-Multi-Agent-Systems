@@ -33,7 +33,7 @@ class FireResetEnv(gym.Wrapper):
 class MaxAndSkipEnv(gym.Wrapper):
     def __init__(self, env=None, skip=4):
         """Return only every `skip`-th frame"""
-        super(MaxAndSkipEnv, self).__init__(env)
+        super().__init__(env)
         # most recent raw observations (for max pooling across time steps)
         self._obs_buffer = collections.deque(maxlen=2)
         self._skip = skip
@@ -180,5 +180,5 @@ def make_env(env_name):
     env = BufferWrapper(env, 4)
     env = ScaledFloatFrame(env)
     env = EpisodicLifeEnv(env)
-    # env = ClipRewardEnv(env)
+    env = ClipRewardEnv(env)
     return env
